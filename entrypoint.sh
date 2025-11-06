@@ -16,5 +16,5 @@ done
 if [ -z "$namespace" ]; then
   unmold publish module $1 $2 --system "$system" --path "$path"
 else
-  unmold publish module $namespace/$1 $2 --system "$system" --path "$path
+  unmold publish module $namespace/$1 $2 --system "$system" --path "$path"
 fi
