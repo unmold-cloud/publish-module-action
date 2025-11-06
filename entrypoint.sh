@@ -1,4 +1,7 @@
+
 #!/bin/bash
+set -euo pipefail
+trap 'echo "Error on line $LINENO: $BASH_COMMAND"' ERR
 
 for arg in "$@"; do
   case $arg in
