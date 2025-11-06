@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v5
       - name: Generate UUID
         id: uuid
-        run: echo "value=$(uuidgen)" >> $GITHUB_OUTPUT
+        run: echo "value=$(uuidgen)" >> "$GITHUB_OUTPUT"
       - name: Publish Module
         uses: ./  # Use the action defined in this repository
         with:
