@@ -21,4 +21,4 @@ jobs:
           name: 'sample-module-${{ steps.uuid.outputs.value }}'
           system: 'aws'
           version: '1.0.0'
-          module-path: './test-module'
+          module-path: './test/module'
